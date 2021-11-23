@@ -1,15 +1,3 @@
----
-title: "Primer conteo de primates Costa Rica"
-author: ""
-output:
-  flexdashboard::flex_dashboard:
-    theme: yeti
-    orientation: rows
-    vertical_layout: scroll
-    navbar:
-        - { icon: "fab fa-facebook-f", href: "https://www.facebook.com/groups/1089060534898714", align: right }
-        - { icon: "fas fa-leaf", href: "https://www.inaturalist.org/projects/conteo-nacional-de-primates-costa-rica", align: right}
----
 
 ```{r setup, include=FALSE}
 #-------------------- Paquetes --------------------
@@ -83,7 +71,6 @@ redvial_wgs84 <- cr_redvial %>%
 
 Row {data-height=700}
 -----------------------------------------------------------------------
-### Distribución espacial de registros
 ```{r}
 leaflet() %>%
   fitBounds(lng1 = -86, lng2 = -82, lat1 = 8, lat2 = 11) %>%
