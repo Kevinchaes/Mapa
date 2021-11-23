@@ -1,3 +1,10 @@
+---
+output:
+  flexdashboard::flex_dashboard:
+    theme: yeti
+    orientation: rows
+    vertical_layout: scroll
+---
 
 ```{r setup, include=FALSE}
 #-------------------- Paquetes --------------------
@@ -71,6 +78,7 @@ redvial_wgs84 <- cr_redvial %>%
 
 Row {data-height=700}
 -----------------------------------------------------------------------
+### Distribución de registros
 ```{r}
 leaflet() %>%
   fitBounds(lng1 = -86, lng2 = -82, lat1 = 8, lat2 = 11) %>%
