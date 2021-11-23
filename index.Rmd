@@ -1,7 +1,7 @@
 ---
+title: "Primer conteo de primates Costa Rica"
 output:
   flexdashboard::flex_dashboard:
-    theme: yeti
     orientation: rows
     vertical_layout: scroll
 ---
